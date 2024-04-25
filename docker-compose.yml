@@ -2,6 +2,8 @@ version: '3.9'
 services:
   wireguard-server:
     image: weejewel/wg-easy:7
+    environment:
+      WG_ALLOWED_IPS: 10.8.0.0/24
     volumes:
       - wireguardServerData:/etc/wireguard
     ports:
