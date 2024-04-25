@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  wireguard-server:
+    container_name: wireguardServerProd
+    environment:
+      - WG_HOST=vpn.ggmunich.de
+      - PASSWORD=${ADMIN_PASSWORD?Missing environment variable see readme}

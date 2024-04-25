@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  wireguard-server:
+    container_name: wireguardServerDev
+    environment:
+      - WG_HOST=${HOST?Missing environment variable see readme}
+      - PASSWORD=${ADMIN_PASSWORD:admin}
