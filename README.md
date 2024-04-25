@@ -45,7 +45,7 @@ Create a environment file `touch .env`. Override variables in the `{variable nam
 
 | Variable         | Description              | Required in dev | Required in prod | Default value |
 | ---------------- | ------------------------ | --------------- | ---------------- | ------------- |
-| `HOST`           | Host url of the service. | `true`          | `false`          | none          |
+| `HOST`           | Host url of the service. | `true`          | `true`           | none          |
 | `ADMIN_PASSWORD` | Password for the admin.  | `false`         | `true`           | `admin`       |
 
 <!-- CONTRIBUTING -->
