@@ -4,6 +4,6 @@ services:
     container_name: wireguardServerDev
     environment:
       WG_HOST: ${HOST?Missing environment variable see readme}
-      PASSWORD: ${ADMIN_PASSWORD:admin}
+      PASSWORD_HASH: ${ADMIN_PASSWORD:admin}
     ports:
       - 51821:51821/tcp

@@ -4,7 +4,7 @@ services:
     container_name: wireguardServerProd
     environment:
       WG_HOST: ${HOST:?Missing environment variable see readme}
-      PASSWORD: ${ADMIN_PASSWORD?Missing environment variable see readme}
+      PASSWORD_HASH: ${ADMIN_PASSWORD?Missing environment variable see readme}
       VIRTUAL_HOST: ${HOST?Missing environment variable see readme}
       VIRTUAL_PORT: 51821
       LETSENCRYPT_HOST: ${HOST:?Missing environment variable see readme}
